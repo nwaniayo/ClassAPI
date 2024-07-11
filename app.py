@@ -19,7 +19,7 @@ def predict():
         file_path = f"./{filename}"
         file.save(file_path)
 
-        client = Client("Ayomilala/foodSpace")
+        client = Client("Ayomilala/LocFood")
         result = client.predict(
             image=handle_file(file_path),
             api_name="/predict"
